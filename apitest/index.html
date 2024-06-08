@@ -7,7 +7,7 @@
         <script>
 function testClick(){
     const url = "https://m1asnb3po2.execute-api.us-east-1.amazonaws.com/stage1/step1";
-    fetch(url)
+    fetch(url, { mode: 'no-cors'})
     .then(response => console.log(response))
     //.then(data => console.log(data))
     .catch(error => console.error('Error:', error));
