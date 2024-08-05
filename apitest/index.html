@@ -1,0 +1,17 @@
+<html>
+    <head>
+
+    </head>
+    <body>
+        <button onClick="testClick();">TEST</button>
+        <script>
+function testClick(){
+    const url = "https://mvdg7ogomtzn4uh6e3fpr7oblu0lsjpi.lambda-url.us-east-1.on.aws/";
+    fetch(url)
+    .then(response => console.log(response))
+    //.then(data => console.log(data))
+    .catch(error => console.error('Error:', error));
+};
+        </script>
+    </body>
+</html>
